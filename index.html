@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="resumeApp">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="layout/img/fh.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Faisal hijazi</title>
+    <link rel="stylesheet" href="layout\css\bootstrap.min.css">
+    <link rel="stylesheet" href="layout\css\font-awesome.min.css">
+    <link rel="stylesheet" href="layout\css\style.css">
+  </head>
+  <body ng-controller="mainController">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myfacebookResume" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="layout/img/fb-logo.png" alt="Faisal Logog" /></a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="myfacebookResume">
+            <ul class="nav navbar-nav">
+              <form class="navbar-form navbar-left">
+                <div class="form-group input-group">
+                  <input type="text" class="form-control" value="Faisal Hijazi ʚïɞ" id="search-input">
+                  <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                </div>
+              </form>
+              <li class="fb-avatar"><a href="#/about"><img src="layout/img/fb-avatar.jpg" alt="" class="fb-img" />Faisal</a></li>
+              <li><a href="#">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- page one Sidebar -->
+        <section class="timeline">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-9">
+                      <div class="profile">
+                          <div class="cover">
+                              <img src="http://i.imgur.com/uffDDOh.jpg" alt="" class="img-responsive"/>
+                          </div>
+                          <div class="pics">
+                              <img src="http://i.imgur.com/Cfpg8Yt.jpg" alt="" class="img-responsive img-rounded img-thumbnail"/>
+                          </div>
+                          <div class="myname">
+                            <p>Faisal Hijazi ʚïɞ</p>
+                            <p>(فيصل حجازي)</p>
+                          </div>
+                          <div class="nav nav-pills hidden-xs">
+                            <li><a href="#">Timeline</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                          </div>
+                      </div>
+                      <div id="main" class="main">
+                         <div ng-view class="{{ message }}"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="sidebar affix">
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+    <script src="layout\js\angular.min.js" ></script>
+    <script src="layout\js\angular-route.js" ></script>
+    <script src="layout\js\jquery-1.11.1.min.js" ></script>
+    <script src="layout\js\bootstrap.min.js" ></script>
+    <script src="layout\js\typed.min.js" ></script>
+    <script src="layout\js\backend.js" ></script>
+
+  </body>
+</html>
